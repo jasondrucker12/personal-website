@@ -3,6 +3,8 @@ import './App.css';
 import {resume} from './data/resume.js';
 import ResumeItem from './Components/ResumeItem.js';
 import PhotoWall from './Components/PhotoWall.js';
+import EducationItem from './Components/EducationItem.js';
+import {SubHeadingBadge} from './Components/SubHeadingBadge.js';
 //Theming
 import { ThemeProvider } from 'emotion-theming'
 //import preset from '@rebass/preset';
@@ -10,8 +12,7 @@ import theme from './theme';
 import { Heading, Card, Box, Flex, Text, Image } from 'rebass';
 import { useSpring, animated } from 'react-spring';
 
-
-
+import photo from './data/pictures/parisHeadshot.jpg';
 
 function App() {
   const expElements = resume.experience.map((el) =>
@@ -20,7 +21,6 @@ function App() {
 
   const animatedProps = useSpring({opacity: 1, from: {opacity: 0}});
 
-
   return (
     <ThemeProvider theme={theme}>
       <Heading
@@ -28,16 +28,21 @@ function App() {
         >
         Jason Drucker
       </Heading>
-      <Flex>
+      <Flex alignItems='center'>
         <Box
           width={1/3}
           >
           <Card
-            m={5}
-            bg='cardBackground'
+            variant='descriptioncard'
             >
+            <Image
+              sx={{
+                p: 3,
+                borderRadius: 9999,
+              }}
+              src={photo}/>
             <Text variant='description'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <b>Hello.</b> {resume.description}
             </Text>
           </Card>
         </Box>
@@ -47,10 +52,15 @@ function App() {
         </Box>
       </Flex>
       <Card variant='resumecontainer'>
-        <Heading>PROFESSIONAL EXPERIENCE</Heading>
+        <SubHeadingBadge title='PROFESSIONAL EXPERIENCE'/>
         <animated.div style={animatedProps}>
           {expElements}
         </animated.div>
+      </Card>
+      <Card variant='resumecontainer'>
+        <SubHeadingBadge title='EDUCATION'/>
+        <EducationItem item={resume.education[0]}/>
+        <EducationItem item={resume.education[1]}/>
       </Card>
     </ThemeProvider>
   );

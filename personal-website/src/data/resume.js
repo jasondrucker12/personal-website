@@ -1,6 +1,8 @@
 const resume = {
+  description: 'My name is Jason Drucker and I am a Computer Science Student at Villanova University graduating in May of 2020.  I am originally from the Greater New York City area and am currently seeking post-graduation full time Software Engineering opportunities in preferably, but not limited to, the New York City region.  I ham most experienced with Front-end technologies like React.js/Redux and Java Development.  Thanks for visiting my website and I hope you enjoy learning more about me!',
   experience :[
     {
+      id: 0,
       company: 'Visa Inc.',
       position: 'Front End Software Engineering Intern',
       startDate: 'May 2019',
@@ -13,6 +15,7 @@ const resume = {
       ]
     },
     {
+      id: 1,
       company: 'Vatican Telecommunications',
       position: 'Web Development Intern',
       startDate: 'Sept 2018',
@@ -24,6 +27,7 @@ const resume = {
       ]
     },
     {
+      id: 2,
       company: 'Harris Corporation',
       position: 'Space & Intelligence Systems Software Engineering Intern',
       startDate: 'May 2018',
@@ -37,6 +41,7 @@ const resume = {
       ]
     },
     {
+      id: 3,
       company: 'Villanova Computing Sciences Department',
       position: 'Student Associate',
       startDate: 'Sept  2016',
@@ -49,6 +54,7 @@ const resume = {
       ]
     },
     {
+      id: 4,
       company: 'Unified Technologies',
       position: 'Information Technology Intern',
       startDate: 'June 2017',
@@ -59,6 +65,7 @@ const resume = {
       ]
     },
     {
+      id: 5,
       company: 'Villanova Computing Sciences Department',
       position: 'Freshman Match Researcher',
       startDate: 'Jan 2017',
@@ -69,6 +76,25 @@ const resume = {
         'In a team of three, assembled two robotic arms which, in cooperation with two Raspberry Pi 3s and two cameras, could interpret a tic tac toe board and analyze a next move.'
       ]
     }
+  ],
+  education: [{
+    school: 'Villanova University',
+    startDate: 'August 2016',
+    endDate: 'May 2020',
+    location: 'Villanova, PA',
+    icon: 'villanova',
+    additonalInfo: [
+
+    ]
+  },
+  {
+    school: 'Bloomfield High School',
+    startDate: 'September 2012',
+    endDate: 'June 2016',
+    location: 'Bloomfield, NJ',
+    additonalInfo: [
+    ]
+  }
   ]
 };
 

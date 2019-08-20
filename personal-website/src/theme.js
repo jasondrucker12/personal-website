@@ -6,20 +6,24 @@ export default {
     primary: 'tomato',
   },
   shadows: {
-    card: '0 0 4px rgba(0, 0, 0, 0.2)',
+    card: '0 0 4px rgba(0, 0, 0, 0.3)',
   },
   fonts: {
     body: 'helvetica',
     heading: 'helvetica'
   },
   variants: {
-
-    resumecard: {
-      my: 3,
-      //bg: 'cardBackground',
+    descriptioncard: {
       bg: 'white',
       borderRadius: 6,
-      borderColor: 'black',
+      boxShadow: 'card',
+      m:5,
+    //  maxHeight: 600
+    },
+    resumecard: {
+      my: 3,
+      bg: 'white',
+      borderRadius: 6,
       boxShadow: 'card',
       p: 3
     },
@@ -41,7 +45,7 @@ export default {
     },
     description: {
       p: 3,
-      fontSize: [2,3,4]
+      fontSize: [1,2,3]
     }
   }
 }

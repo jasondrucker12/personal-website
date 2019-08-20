@@ -1,4 +1,4 @@
-import photo1 from './parisHeadshot.jpg';
+//import photo1 from './parisHeadshot.jpg';
 import photo2 from './sisters.jpg';
 import photo3 from './internshowcase.jpg';
 import photo4 from './austinkayak.jpg';
@@ -10,7 +10,7 @@ import photo9 from './snowboard.jpg';
 import photo10 from './VinV.png'
 
 export const picary = [
-  photo1,
+  photo10,
   photo2,
   photo3,
   photo4,
@@ -22,5 +22,5 @@ export const restary = [
   photo7,
   photo8,
   photo9,
-  photo10
+
 ]
