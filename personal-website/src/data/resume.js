@@ -1,5 +1,5 @@
 const resume = {
-  description: 'My name is Jason Drucker and I am a Computer Science Student at Villanova University graduating in May of 2020.  I am originally from the Greater New York City area and am currently seeking post-graduation full time Software Engineering opportunities in preferably, but not limited to, the New York City region.  I ham most experienced with Front-end technologies like React.js/Redux and Java Development.  Thanks for visiting my website and I hope you enjoy learning more about me!',
+  description: 'My name is Jason Drucker and I am a Computer Science Student at Villanova University graduating in May of 2020.  I am originally from the Greater New York City area and am currently seeking post-graduation full time Software Engineering opportunities in preferably, but not limited to, the New York City region.  I am most experienced with Front-end technologies like React.js/Redux and Java Development.  Thanks for visiting my website and I hope you enjoy learning more about me!',
   experience :[
     {
       id: 0,
@@ -99,14 +99,3 @@ const resume = {
 };
 
 export {resume};
-
-// {
-//   company: '',
-//   position: '',
-//   startDate: '',
-//   endDate: '',
-//   location: '',
-//   bulletPoints: [
-//
-//   ]
-// }

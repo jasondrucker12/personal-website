@@ -55,7 +55,7 @@ export default class PhotoWall extends React.Component{
                       <ImageCell
                         w={1/3}
                         id={i}
-                        srcary={[this.state.bwCurPhotos, this.state.curPhotos]}
+                        srcary={[this.state.bwCurPhotos[i], this.state.curPhotos[i]]}
                         />
       )
     }
